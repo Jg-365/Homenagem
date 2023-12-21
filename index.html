@@ -8,14 +8,29 @@
 </head>
 <body>
     <div class="container">
-        <div class="background-rectangle"></div> <!-- Retângulo de cor sólida -->
-        <h1>Homenagem ao homem, marido, pai, avô, <br>amigo e companheiro, Manoel Leite Filho.</h1> 
-        <video controls>
-            <source src="video.mp4" type="video/mp4">
-             Seu navegador não suporta o elemento de vídeo.
-        </video>
 
-        <h2>⭐07/09/1949<br>✝️19/12/2023</h2>
+        <h1>Homenagem ao homem, marido, pai, avô, <br>amigo e companheiro, Manoel Leite Filho.</h1> 
+        <video src="video.mp4"
+            controls
+            poster="Saudades Eternas.jpg"
+        >
+        
+        </video>
+        
+        <a href="video.mp4" download="homenagem_video.mp4">
+            <button>Download do Vídeo</button>
+        </a>
+
+        <script>
+            // Adiciona um evento de clique ao botão para fazer o download do vídeo
+            document.getElementById('downloadButton').addEventListener('click', function(event) {
+                // Impede o comportamento padrão do link para evitar a navegação
+                event.preventDefault();
+                // Simula o clique no botão de download
+                var downloadButton = document.querySelector('#downloadButton');
+                downloadButton.click();
+            });
+        </script>
     </div>
 </body>
 </html>

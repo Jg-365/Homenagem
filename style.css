@@ -27,20 +27,8 @@ h1::before {
     top: 0;
     left: 50%; /* Ajuste para começar no meio */
     transform: translateX(-50%); /* Centraliza horizontalmente */
-    width: 700px; /* Largura automática com base no conteúdo */
-    height: 80px;
-    background-color: #0d0825; /* Cor sólida com transparência */
-    z-index: -1;
-}
-
-h2::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%; /* Ajuste para começar no meio */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
-    width: 230px; /* Largura automática com base no conteúdo */
-    height: 100px;
+    width: 50%; /* Largura automática com base no conteúdo */
+    height: 100%;
     background-color: #0d0825; /* Cor sólida com transparência */
     z-index: -1;
 }
@@ -51,4 +39,19 @@ video {
     max-height: 50%;
     display: block;
     margin: auto;
+}
+
+button {
+    background-color: #4b6cb7;
+    color: white;
+    padding: 20px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #324b85;
 }
