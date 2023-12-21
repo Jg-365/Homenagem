@@ -15,35 +15,27 @@ body {
 }
 
 .heading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: relative;
-}
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #0d0825;
-    z-index: -1;
 }
 
 h1 {
     color: white;
-    font-family: 'Raleway', serif;
-    font-size: 1.8em;
+    font-family: 'Pacifico', cursive; /* Substituí a fonte para 'Pacifico' */
+    font-size: 2.5em; /* Ajustei o tamanho da fonte */
     letter-spacing: 1px;
     padding: 10px;
     position: relative;
     z-index: 1;
     margin: 0;
+    font-weight: 350;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .video-container {
     border: 20px solid #0d0825;
     max-width: 70%;
-    height: auto;
+    height: 420px;
     display: block;
     margin: 10px auto -5px;
     position: relative;
@@ -58,9 +50,9 @@ h1 {
 a {
     display: block;
     width: 160px;
-    margin: 12px auto;
+    margin: 20px auto; /* Centraliza o botão horizontalmente e adiciona espaçamento superior */
     padding: 5px 10px;
-    background-color: #4b6cb7;
+    background-color: #0d0825; /* Mudei a cor de fundo para a mesma do heading */
     color: white;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
