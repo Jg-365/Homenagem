@@ -4,24 +4,50 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(to bottom, #186394, #272142);
+    background: linear-gradient(to bottom, #4b6cb7, #162a56); /* Gradiente de azul escuro para azul mais claro */
 }
 
 .container {
-    position: relative;
     text-align: center;
+    position: relative;
 }
 
-h1 {
+h1, h2 {
     color: white;
-    font-family: 'Roboto Slab', serif;
-    font-size: 2.5em;
-    letter-spacing: 2px; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Raleway', serif;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    position: relative;
+    z-index: 1;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Ajuste para começar no meio */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 700px; /* Largura automática com base no conteúdo */
+    height: 80px;
+    background-color: #0d0825; /* Cor sólida com transparência */
+    z-index: -1;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Ajuste para começar no meio */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 230px; /* Largura automática com base no conteúdo */
+    height: 100px;
+    background-color: #0d0825; /* Cor sólida com transparência */
+    z-index: -1;
 }
 
 video {
-    max-width: 70%;
+    border: 10px solid #0d0825;
+    max-width: 50%;
     max-height: 50%;
     display: block;
     margin: auto;
